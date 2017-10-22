@@ -3,26 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Registreren</title>
+<link rel="stylesheet" type="text/css" href="/css/modal.css">
 <script src="/js/registreren.js"></script>
 </head>
 <body>
-	<h1>Registreren</h1>
+	<div class="modal">
+		<div class="modalInhoud">
+			<h1>Registreren</h1>
+			<table>
+				<tr>
+					<td>Voornaam *</td>
+					<td><input id="voornaam" placeholder="Voornaam" maxlength="20"/>
+				</tr>
+				<tr>
+					<td>Tussenvoegsel </td>
+					<td><input id="tussenvoegsel" placeholder="Tussenvoegsel" />
+					</td>
 
-	<div>
-		<table>
-			<tr>
-				<td>Naam:</td>
-				<td><input id="voornaam" placeholder="Voornaam" /> <input
-					id="tussenvoegsel" placeholder="Tussenvoegsel" /> <input
-					id="achternaam" placeholder="Achternaam" /></td>
-			</tr>
-			<tr>
-				<td>Email:</td>
-				<td><input id="email" type="email" placeholder="Achternaam" /></td>
-			</tr>
-			<tr>
-				<td>Geboortedatum:</td>
-				<td><select id="dag">
+				</tr>
+				<tr>
+					<td>Achternaam *</td>
+					<td><input id="achternaam" placeholder="Achternaam" maxlength="20"/></td>
+				</tr>
+				<tr>
+					<td>Email *</td>
+					<td><input id="email" type="email" placeholder="Email" maxlength="100"/></td>
+				</tr>
+				<tr>
+					<td>Geboortedatum *</td>
+					<td><select id="dag">
 							<option value="">- Dag -</option>
 							<option value="01">01</option>
 							<option value="02">02</option>
@@ -55,7 +64,7 @@
 							<option value="29">29</option>
 							<option value="30">30</option>
 							<option value="31">31</option>
-				</select> <select id="maand">
+					</select> <select id="maand">
 							<option value="">- Maand -</option>
 							<option value="01">Januari</option>
 							<option value="02">Februari</option>
@@ -69,7 +78,7 @@
 							<option value="10">Oktober</option>
 							<option value="11">November</option>
 							<option value="12">December</option>
-				</select> <select id="jaar">
+					</select> <select id="jaar">
 							<option value="">- Jaar -</option>
 							<option value="2000">2000</option>
 							<option value="1999">1999</option>
@@ -125,31 +134,35 @@
 							<option value="1949">1949</option>
 							<option value="1948">1948</option>
 							<option value="1947">1947</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td>Land:</td>
-				<td><select id="land">
-						<option value="">-Land-</option>
-						<option value="Nederland">Nederland</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td>Gebruikersnaam:</td>
-				<td><input id="gebruikersnaam" placeholder="Gebruikersnaam" /></td>
-			</tr>
-			<tr>
-				<td>Wachtwoord:</td>
-				<td><input id="wachtwoord" type="password"
-					placeholder="Wachtwoord" /> <input id="wachtwoordRepeat"
-					type="password" placeholder="Wachtwoord" /></td>
-			</tr>
-			<tr>
-				<td><a href="index.html"><button>Terug</button></a>
-					<button onclick="ophalenGegevens()">Registreren</button></td>
-			</tr>
-		</table>
-
+					</select></td>
+				</tr>
+				<tr>
+					<td>Land *</td>
+					<td><select id="land">
+							<option value="">- Land -</option>
+							<option value="Nederland">Nederland</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Gebruikersnaam *</td>
+					<td><input id="gebruikersnaam" placeholder="Gebruikersnaam" maxlength="20"/></td>
+				</tr>
+				<tr>
+					<td>Wachtwoord *</td>
+					<td><input id="wachtwoord" type="password"
+						placeholder="Wachtwoord" maxlength="20"/></td>
+				</tr>
+				<tr>
+					<td>Herhaal wachtwoord *</td>
+					<td><input id="wachtwoordRepeat" type="password"
+						placeholder="Wachtwoord" maxlength="20"/></td>
+				</tr>
+				<tr>
+					<td><a href="index.html"><button>Terug</button></a>
+						<button onclick="ophalenGegevens()">Registreren</button></td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </body>
 </html>

@@ -2,28 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Login</title>
+<title>Account activeren</title>
 <link rel="stylesheet" type="text/css" href="/css/modal.css">
-<script src="/js/login.js"></script>
+<script src="/js/activeren.js"></script>
 </head>
 <body>
 	<div class="modal">
 		<div class="modalInhoud">
-			<h1>Inloggen</h1>
+			<h1>Account activeren</h1>
 			<table>
 				<tr>
 					<td>Gebruikersnaam:</td>
 					<td><input id="gebruikersnaam" placeholder="Gebruikersnaam" /></td>
 				</tr>
 				<tr>
-					<td>Wachtwoord:</td>
-					<td><input id="wachtwoord" type="password" placeholder="Wachtwoord" /></td>
-				</tr>
-				<tr>
-					<td><button onclick="ophalenGegevens()">Inloggen</button></td>
+					<td>Voer hier uw code in:</td>
+					<td><input id="code" placeholder="Verificatiecode" /></td>
+					<td><button onclick="ophalenGegevens()">Activeren</button></td>
 				</tr>
 			</table>
-			<h5>Nog geen account? Klik <a href="registreren.html">hier</a> om te registreren</h5>
 		</div>
 	</div>
 </body>

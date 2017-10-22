@@ -19,11 +19,12 @@ public class Gebruiker {
 	private int jaar;
 	private String gebruikersnaam;
 	private String wachtwoord;
+	private String wachtwoordRepeat;
+	private String activatiecode;
+	private int activated;
 	
 	public Gebruiker() {
-		
 	}
-	
 	public Long getId() {
 		return id;
 	}
@@ -89,6 +90,24 @@ public class Gebruiker {
 	}
 	public void setWachtwoord(String wachtwoord) {
 		this.wachtwoord = wachtwoord;
+	}
+	public String getWachtwoordRepeat() {
+		return wachtwoordRepeat;
+	}
+	public void setWachtwoordRepeat(String wachtwoordRepeat) {
+		this.wachtwoordRepeat = wachtwoordRepeat;
+	}
+	public String getActivatiecode() {
+		return activatiecode;
+	}
+	public void setActivatiecode(String activateCode) {
+		this.activatiecode = activateCode;
+	}
+	public int getActivated() {
+		return activated;
+	}
+	public void setActivated(int activated) {
+		this.activated = activated;
 	}
 }
 
