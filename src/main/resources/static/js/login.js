@@ -19,7 +19,6 @@ function toDatabase() {
 		if (this.readyState == 4 && this.status == 200) {
 			message = this.responseText;
 			if(message == "Ingelogd"){
-				setCookie("gebruiker", gebruikersnaam, 1);
 				window.location.replace(url);
 			}else{
 				alert(message);
