@@ -10,8 +10,6 @@ import nl.jennes.login.Gebruiker;
 
 @Component
 public interface GebruikerRepository extends CrudRepository<Gebruiker, Long> {
-
 	List<Gebruiker> findByGebruikersnaam(String gebruikersnaam);
-	
 }
 

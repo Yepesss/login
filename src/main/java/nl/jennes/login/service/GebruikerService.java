@@ -21,6 +21,7 @@ public class GebruikerService {
 	private Endpoint endpoint;
 	
 	List<Gebruiker> gebruikerBestaat;
+	List<Gebruiker> gebruikerGegevens;
 
 	public void registreren(Gebruiker gebruiker) {
 		gebruikerBestaat = gebruikerRepository.findByGebruikersnaam(gebruiker.getGebruikersnaam());
